@@ -7,7 +7,7 @@ O objetivo deste projeto é obter o modelo de aprendizado de máquina supervisio
 
 Foi utilizado o framework Crisp-DM como orientador do passo-a-passo necessário para desenvolver este projeto.
 
-<img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/Crisp-DM.jpeg' alt="Representação esquemática do framework Crisp-DM" width=300/>
+<img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/Crisp-DM.jpeg' alt="Representação esquemática do framework Crisp-DM" width=600/>
 
 ## Entendimento do negócio
 O canal da Twitch Teo Me Why possui um [sistema de pontos](https://teomewhy.org/twitch).  
