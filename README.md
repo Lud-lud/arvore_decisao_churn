@@ -20,6 +20,8 @@ O canal da Twitch Teo Me Why possui um [sistema de pontos](https://teomewhy.org/
 Há 3 tipos de pontos: Datapoints, Pôneis e Cubos.
 É possível termos pontos negativos, já que as transações em que os pontos são trocados por prêmios também são registradas.
 
+O churn é caracterizado pela inatividade na conta dentro de um período de 28 dias.
+
 ## Entendimento dos dados
 
 <img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/banco_dados.png' alt="Esquema do banco de dados">
