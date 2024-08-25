@@ -5,11 +5,15 @@
 
 O objetivo deste projeto é analisar o perfil dos assinantes de realizam do canal educativo Teo Me Why na Twitch e treinar um modelo de machine learning que estime a probabilidade de churn dos inscritos.
 
+Início: 05/08/24  
+Entrega: 26/08/24  
+Avaliação: 30/08/24  
+
 Foi utilizado o framework Crisp-DM como orientador do passo-a-passo necessário para desenvolver este projeto.
 
 <img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/Crisp-DM.jpeg' alt="Representação esquemática do framework Crisp-DM" width=600/>
 
-Portanto, este workshop nos proporcionou experiências de entendimento de negócios, engenharia de dados e ciência de dados para a execução de um projeto de ciência de dados com dados reais do início ao fim.
+Portanto, este workshop nos proporcionou experiências de entendimento de negócios, engenharia de dados e ciência de dados para a execução de um projeto com dados reais do início ao fim.
 
 ## Entendimento do negócio
 O canal da Twitch Teo Me Why possui um [sistema de pontos](https://teomewhy.org/twitch).  
@@ -66,16 +70,16 @@ Número de coortes (safras):
 
 Portanto, temos os seguinte elementos na nossa feature store:
 ### Partição
-* dtRef
+* **dtRef**: data da observação (coorte), ou seja, último dia da janela de observação.
 ### Id
-* idCliente
+* **idCliente**: código único do cliente.
 ### Features
-* nrSomaPontos: número total de pontos do idCliente na dtRef
-* nrSomaPontosPos: número total de pontos positivos do idCliente na dtRef
-* nrSomaPontosNeg: número total de pontos negativos do idCliente na dtRef
-* nrTicketMedio: ticket médio (número médio de pontos por transação)
-* nrTicketMedioPos: ticket médio considerando apenas pontos positivos
-* nrTicketMedioNeg: ticket médio considerando apenas pontos negativos
+* **nrSomaPontos**: número total de pontos do idCliente na dtRef.
+* **nrSomaPontosPos**: número total de pontos positivos do idCliente na dtRef.
+* **nrSomaPontosNeg**: número total de pontos negativos do idCliente na dtRef.
+* **nrTicketMedio**: ticket médio (número médio de pontos por transação).
+* **nrTicketMedioPos**: ticket médio considerando apenas pontos positivos.
+* **nrTicketMedioNeg**: ticket médio considerando apenas pontos negativos.
 
 
   
