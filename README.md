@@ -9,7 +9,7 @@ Início: 05/08/24
 Entrega: 26/08/24  
 Avaliação: 30/08/24  
 
-Foi utilizado o framework Crisp-DM como orientador do passo-a-passo necessário para desenvolver este projeto.
+Foi utilizado o framework Crisp-DM (Cross-Industry Standard Process for Data Mining) como orientador do passo-a-passo necessário para desenvolver este projeto.
 
 <img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/Crisp-DM.jpeg' alt="Representação esquemática do framework Crisp-DM" width=600/>
 
@@ -82,8 +82,8 @@ Portanto, temos os seguinte elementos na nossa feature store:
 * **nrTicketMedioNeg**: ticket médio considerando apenas pontos negativos (representa a média de gastos do cliente).
 * **nrPontosDia**: número médio de pontos por dia de acesso.
 
-### Análise Exploratória dos dados
-
+### Análise Exploratória de Dados (Exploratory Data Analysis - EDA)
+Embora a análise exploratória de dados seja feita normalmente na etapa de entendimento dos dados, realizamos uma EDA nesta etapa de preparação dos dados pois estamos interessadas em entender as features que foram construídas a partir dos dados brutos.
   
 ## Modelagem
 ## Avaliação
