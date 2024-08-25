@@ -1,3 +1,6 @@
+<img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/capa_projeto_tmw_med.png' alt="Capa do projeto">
+
+
 # Previsão de churn de um canal na Twitch
 
 O objetivo deste projeto é obter o modelo de aprendizado de máquina supervisionado "árvore de decisão" (unsupervised machine learning "decision trees") para compreender o perfil dos assinantes de realizam o cancelamento da inscrição no canal educativo Teo Me Why na Twitch.  
