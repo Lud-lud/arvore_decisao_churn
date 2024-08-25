@@ -78,8 +78,9 @@ Portanto, temos os seguinte elementos na nossa feature store:
 * **nrSomaPontosPos**: número total de pontos positivos do idCliente na dtRef.
 * **nrSomaPontosNeg**: número total de pontos negativos do idCliente na dtRef.
 * **nrTicketMedio**: ticket médio (número médio de pontos por transação).
-* **nrTicketMedioPos**: ticket médio considerando apenas pontos positivos.
-* **nrTicketMedioNeg**: ticket médio considerando apenas pontos negativos.
+* **nrTicketMedioPos**: ticket médio considerando apenas pontos positivos (representa o valor médio por compra).
+* **nrTicketMedioNeg**: ticket médio considerando apenas pontos negativos (representa a média de gastos do cliente).
+*  **nrPontosDia**: número médio de pontos por dia de acesso.
 
 
   
