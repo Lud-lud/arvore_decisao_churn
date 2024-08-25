@@ -70,7 +70,12 @@ Portanto, temos os seguinte elementos na nossa feature store:
 ### Id
 * idCliente
 ### Features
-* 
+* nrSomaPontos: número total de pontos do idCliente na dtRef
+* nrSomaPontosPos: número total de pontos positivos do idCliente na dtRef
+* nrSomaPontosNeg: número total de pontos negativos do idCliente na dtRef
+* nrTicketMedio: ticket médio (número médio de pontos por transação)
+* nrTicketMedioPos: ticket médio considerando apenas pontos positivos
+* nrTicketMedioNeg: ticket médio considerando apenas pontos negativos
 
 
   
