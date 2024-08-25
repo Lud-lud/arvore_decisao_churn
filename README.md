@@ -86,8 +86,29 @@ Portanto, temos os seguinte elementos na nossa feature store:
 
 ### Análise Exploratória de Dados (Exploratory Data Analysis - EDA)
 Embora a análise exploratória de dados seja feita normalmente na etapa de entendimento dos dados, realizamos uma EDA nesta etapa de preparação dos dados pois estamos interessadas em entender as features que foram construídas a partir dos dados brutos.
-  
+
 ## Modelagem
+1. Método Imputer para valores NaN 
+
+Ao fazer o treinamento e validação da árvore de decisão e da random forest, foi constatado que havia valores ausentes.<br>
+
+Já que alguns modelos de ML não conseguem lidar com valores ausentes diretamente, foi utilizada a técnica de Imputer por meio da importação do pacote `from sklearn.impute import SimpleImputer`.
+O método se deu pela substituição os valores ausentes pela média de dada característica (`imputer = SimpleImputer(strategy='mean')`).
+Importante notar que um imputador ajuda a evitar a perda de dados ou registros incompletos, o que poderia enviesar os resultados ou tornar o modelo menos preciso. 
+
 ## Avaliação
+1. Árvore de decisão
+
+   
+2. Random Forest (floresta aleatória)
+
+Combina muitas árvores de decisão, em que cada uma traz uma recomendação para tomada de decisão. <br>
+
+A parte “aleatória” vem da forma como a floresta é construída. Cada árvore na floresta é treinada em um subconjunto diferente dos dados e usa características (perguntas) diferentes para fazer suas divisões. Essa aleatoriedade ajuda a criar uma variedade de árvores que juntas fazem melhores previsões. <br>
+
+Quando a floresta aleatória precisa fazer uma previsão, ela pergunta a todas as árvores suas opiniões. Para tarefas de classificação (como prever se um assinante vai cancelar), ela conta os votos e escolhe o resultado mais popular.
+prever se um assinante vai cancelar), ela conta os votos e escolhe o resultado mais popular.
+
+
 ## Implementação (deployment)
 
