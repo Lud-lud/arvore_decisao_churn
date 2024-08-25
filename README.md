@@ -88,17 +88,16 @@ Portanto, temos os seguinte elementos na nossa feature store:
 Embora a análise exploratória de dados seja feita normalmente na etapa de entendimento dos dados, realizamos uma EDA nesta etapa de preparação dos dados pois estamos interessadas em entender as features que foram construídas a partir dos dados brutos.
 
 ## Modelagem
-1. Método Imputer para valores NaN 
+1. Método IterativeImputer para valores NaN
 
-Ao fazer o treinamento e validação da árvore de decisão e da random forest, foi constatado que havia valores ausentes.<br>
+Durante o processo de treinamento e validação dos modelos de árvore de decisão e random forest, foi identificado que alguns valores estavam ausentes nos dados. Para lidar com esses valores ausentes, foi utilizada a técnica de imputação avançada conhecida como IterativeImputer, a qual foi importada do pacote `from sklearn.experimental import enable_iterative_imputer` e `from sklearn.impute import IterativeImputer`.
 
-Já que alguns modelos de ML não conseguem lidar com valores ausentes diretamente, foi utilizada a técnica de Imputer por meio da importação do pacote `from sklearn.impute import SimpleImputer`.
-O método se deu pela substituição os valores ausentes pela média de dada característica (`imputer = SimpleImputer(strategy='mean')`).
-Importante notar que um imputador ajuda a evitar a perda de dados ou registros incompletos, o que poderia enviesar os resultados ou tornar o modelo menos preciso. 
+O IterativeImputer realiza a imputação de valores ausentes de forma iterativa, usando um modelo de regressão para prever os valores que estão faltando com base nas características observadas no restante dos dados. Isso se diferencia da simples substituição por média, pois considera a relação entre variáveis para estimar os valores ausentes. Este método não apenas ajuda a preencher os dados incompletos, mas também preserva a integridade das relações entre as variáveis, minimizando o viés e melhorando a precisão dos modelos de machine learning.
 
 ## Avaliação
-1. Árvore de decisão
+1. Decision Tree (Árvore de decisão)
 
+É um modelo de machine learning que toma decisões com base em uma estrutura de árvore. Cada nó representa uma pergunta sobre uma característica dos dados, e cada ramo mostra a resposta. A árvore divide os dados em subconjuntos menores até chegar a uma previsão ou classificação. 
    
 2. Random Forest (floresta aleatória)
 
