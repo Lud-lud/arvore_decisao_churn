@@ -96,11 +96,11 @@ Portanto, temos os seguinte elementos na nossa feature store:
 * **nrRecenciaDias**: menor diferença entre a última transação e data da safra.
 * **nrQtdeDias**: frequência de atividade em dias.
 * **nrQtdeTransacoes**: frequência de transações.
-* **nrQtdeTransacaoDay2**: frequência de transações na segunda-feira.
-* **nrQtdeTransacaoDay3**: frequência de transações na terça-feira.
-* **nrQtdeTransacaoDay4**: frequência de transações na quarta-feira.
-* **nrQtdeTransacaoDay5**: frequência de transações na quinta-feira.
-* **nrQtdeTransacaoDay6**: frequência de transações na na sexta-feira.
+* **nrQtdeTransacaoDay2**: frequência de transações no segundo dia da semana.
+* **nrQtdeTransacaoDay3**: frequência de transações no terceiro dia da semana
+* **nrQtdeTransacaoDay4**: frequência de transações no quarto dia da semana
+* **nrQtdeTransacaoDay5**: frequência de transações no quinto dia da semana
+* **nrQtdeTransacaoDay6**: frequência de transações no sexto dia da semana
 
 ### Análise Exploratória de Dados (Exploratory Data Analysis - EDA)
 Embora a análise exploratória de dados seja feita normalmente na etapa de entendimento dos dados, realizamos uma EDA nesta etapa de preparação dos dados pois estamos interessadas em entender as features que foram construídas a partir dos dados brutos.
