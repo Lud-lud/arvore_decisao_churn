@@ -119,12 +119,11 @@ Durante o processo de treinamento e validação dos modelos de árvore de decis�
 
 O IterativeImputer realiza a imputação de valores ausentes de forma iterativa, usando um modelo de regressão para prever os valores que estão faltando com base nas características observadas no restante dos dados. Isso se diferencia da simples substituição por média, pois considera a relação entre variáveis para estimar os valores ausentes. Este método não apenas ajuda a preencher os dados incompletos, mas também preserva a integridade das relações entre as variáveis, minimizando o viés e melhorando a precisão dos modelos de machine learning.
 
-### Avaliação
-1. Decision Tree (Árvore de decisão)
+2. Decision Tree (Árvore de decisão)
 
 É um modelo de machine learning que toma decisões com base em uma estrutura de árvore. Cada nó representa uma pergunta sobre uma característica dos dados, e cada ramo mostra a resposta. A árvore divide os dados em subconjuntos menores até chegar a uma previsão ou classificação. 
    
-2. Random Forest (floresta aleatória)
+3. Random Forest (floresta aleatória)
 
 Combina muitas árvores de decisão, em que cada uma traz uma recomendação para tomada de decisão. <br>
 
@@ -132,6 +131,9 @@ A parte “aleatória” vem da forma como a floresta é construída. Cada árvo
 
 Quando a floresta aleatória precisa fazer uma previsão, ela pergunta a todas as árvores suas opiniões. Para tarefas de classificação (como prever se um assinante vai cancelar), ela conta os votos e escolhe o resultado mais popular.
 
+## Avaliação
+O modelo Random Forest foi testado para prever quais assinantes vão churnar. Ele teve um ótimo desempenho nos dados usados para treinar o modelo, com 96% de acurácia. No entanto, quando aplicamos o modelo a novos dados, a acurácia caiu para 72%, o que sugere que o modelo pode estar com overfit e não se sair tão bem em situações novas. A precisão (0,96) e o recall (0,99) também foram muito bons no treinamento, mas diminuíram na validação (0,76 e 0,84, respectivamente).
+De forma geral, vemos que o modelo identifica bem os assinantes que churnarão, mas precisa de ajustes para melhorar sua performance em dados que ainda não viu.
 
 ## Implementação (deployment)
 Esta etapa ficaremos devendo... Obrigada pela atenção!
