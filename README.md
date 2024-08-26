@@ -134,4 +134,4 @@ Quando a floresta aleatória precisa fazer uma previsão, ela pergunta a todas a
 
 
 ## Implementação (deployment)
-
+Esta etapa ficaremos devendo... Obrigada pela atenção!
