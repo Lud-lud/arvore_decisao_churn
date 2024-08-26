@@ -93,6 +93,14 @@ Portanto, temos os seguinte elementos na nossa feature store:
 * **nrTicketMedioPos**: ticket médio considerando apenas pontos positivos (representa o valor médio de pontos ganhos).
 * **nrTicketMedioNeg**: ticket médio considerando apenas pontos negativos (representa a média de gastos do cliente).
 * **nrPontosDia**: número médio de pontos por dia de acesso.
+* **nrRecenciaDias**: menor diferença entre a última transação e data da safra.
+* **nrQtdeDias**: frequência de atividade em dias.
+* **nrQtdeTransacoes**: frequência de transações.
+* **nrQtdeTransacaoDay2**: frequência de transações na segunda-feira.
+* **nrQtdeTransacaoDay3**: frequência de transações na terça-feira.
+* **nrQtdeTransacaoDay4**: frequência de transações na quarta-feira.
+* **nrQtdeTransacaoDay5**: frequência de transações na quinta-feira.
+* **nrQtdeTransacaoDay6**: frequência de transações na na sexta-feira.
 
 ### Análise Exploratória de Dados (Exploratory Data Analysis - EDA)
 Embora a análise exploratória de dados seja feita normalmente na etapa de entendimento dos dados, realizamos uma EDA nesta etapa de preparação dos dados pois estamos interessadas em entender as features que foram construídas a partir dos dados brutos.
