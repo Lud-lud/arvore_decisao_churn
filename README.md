@@ -105,6 +105,11 @@ Portanto, temos os seguinte elementos na nossa feature store:
 ### Análise Exploratória de Dados (Exploratory Data Analysis - EDA)
 Embora a análise exploratória de dados seja feita normalmente na etapa de entendimento dos dados, realizamos uma EDA nesta etapa de preparação dos dados pois estamos interessadas em entender as features que foram construídas a partir dos dados brutos.
 
+<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/contas_ativas_inativas.png' alt="Número de contas ativas e inativas entre fevereiro e agosto de 2024">
+<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/contas_ativas_inativas_safra.png' alt="Contas ativas e inativas por safra">
+<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/media_transacao_dia.png' alt="Média de transações por dia por status da conta">
+<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/media_pontos_dia.png' alt="'Número de contas por média de pontos por dia">
+
 ## Modelagem
 1. Método IterativeImputer para valores NaN
 
