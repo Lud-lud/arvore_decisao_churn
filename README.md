@@ -36,12 +36,9 @@ Há 3 tipos de pontos: Datapoints, Pôneis e Cubos.
 O churn é caracterizado pela inatividade na conta dentro de um período de 28 dias. Portanto, denominaremos contas que deram "churn" como inativas, e as que não deram "churn" como ativas.
 
 ## Entendimento dos dados
-
-<img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/banco_dados.png' alt="Esquema do banco de dados">
-
 ### Dicionário de dados
 
-[Cliente](https://teomewhy-primary.cloud.databricks.com/explore/data/silver/upsell/cliente?o=2977606981748304)
+[cliente](https://teomewhy-primary.cloud.databricks.com/explore/data/silver/upsell/cliente?o=2977606981748304)
 
 | Nome da Coluna     | Tipo de Dados | Descrição                                                                 |
 |--------------------|---------------|---------------------------------------------------------------------------|
@@ -50,7 +47,7 @@ O churn é caracterizado pela inatividade na conta dentro de um período de 28 d
 | flEmailCliente     | bigint        | Indicador se a pessoa inscrita possui um email registrado. 1 para sim e 0 para não. |
 
 
-[Produtos](https://teomewhy-primary.cloud.databricks.com/explore/data/silver/upsell/produtos?o=2977606981748304)
+[produtos](https://teomewhy-primary.cloud.databricks.com/explore/data/silver/upsell/produtos?o=2977606981748304)
 
 | Nome da Coluna     | Tipo de Dados | Descrição                                                                 |
 |--------------------|---------------|---------------------------------------------------------------------------|
@@ -81,7 +78,7 @@ Os dados foram trabalhados diretamente no Databricks em todas as atapas do proje
 Para a criação da feature store, foi desenvolvido um script em Python que integra a query SQL de maneira a automatizar a coleta de dados para diferentes coortes.
 
 Janela de observação: 28 dias  
-Número de coortes (safras):
+Número de coortes (safras): 7
 
 Portanto, temos os seguinte elementos na nossa feature store:
 ### Partição
@@ -107,7 +104,7 @@ Durante o processo de treinamento e validação dos modelos de árvore de decis�
 
 O IterativeImputer realiza a imputação de valores ausentes de forma iterativa, usando um modelo de regressão para prever os valores que estão faltando com base nas características observadas no restante dos dados. Isso se diferencia da simples substituição por média, pois considera a relação entre variáveis para estimar os valores ausentes. Este método não apenas ajuda a preencher os dados incompletos, mas também preserva a integridade das relações entre as variáveis, minimizando o viés e melhorando a precisão dos modelos de machine learning.
 
-## Avaliação
+### Avaliação
 1. Decision Tree (Árvore de decisão)
 
 É um modelo de machine learning que toma decisões com base em uma estrutura de árvore. Cada nó representa uma pergunta sobre uma característica dos dados, e cada ramo mostra a resposta. A árvore divide os dados em subconjuntos menores até chegar a uma previsão ou classificação. 
@@ -119,7 +116,6 @@ Combina muitas árvores de decisão, em que cada uma traz uma recomendação par
 A parte “aleatória” vem da forma como a floresta é construída. Cada árvore na floresta é treinada em um subconjunto diferente dos dados e usa características (perguntas) diferentes para fazer suas divisões. Essa aleatoriedade ajuda a criar uma variedade de árvores que juntas fazem melhores previsões. <br>
 
 Quando a floresta aleatória precisa fazer uma previsão, ela pergunta a todas as árvores suas opiniões. Para tarefas de classificação (como prever se um assinante vai cancelar), ela conta os votos e escolhe o resultado mais popular.
-prever se um assinante vai cancelar), ela conta os votos e escolhe o resultado mais popular.
 
 
 ## Implementação (deployment)
