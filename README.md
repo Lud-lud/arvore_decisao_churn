@@ -1,5 +1,18 @@
-<img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/capa_projeto_tmw_med.png' alt="Capa do projeto">
+<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/capa_projeto.png' alt="Capa do projeto">
 
+Este projeto foi realizado no workshop desenvolvido pelo **Mulheres em Dados** em parceria com **Téo Me Why**. Veja como apoiar estes projetos:
+### Téo Me Why
+[Apoia.se](apoia.se/teomewhy)
+[LivePix](livepix.gg/teomewhy)
+[Assinante na Twitch](twitch.tv/teomewhy)
+[Membros no YouTube](youtube.com/@teomewhy)
+[GitHub Sponsors](github.com/sponsors/TeoMeWhy)
+
+### Mulheres em Dados
+[Discord](https://lnkd.in/dUEymWsU)
+[LinkedIn](https://www.linkedin.com/company/mulheresemdados/about/)
+[YouTube](https://www.youtube.com/@MulheresemDados)
+[Instagram](https://www.instagram.com/mulheresemdados/)
 
 # Previsão de churn de um canal na Twitch
 
@@ -11,7 +24,7 @@ Avaliação: 30/08/24
 
 Foi utilizado o framework Crisp-DM (Cross-Industry Standard Process for Data Mining) como orientador do passo-a-passo necessário para desenvolver este projeto.
 
-<img src='https://raw.githubusercontent.com/Lud-lud/arvore_decisao_churn/main/Crisp-DM.jpeg' alt="Representação esquemática do framework Crisp-DM" width=600/>
+<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/Crisp-DM.jpeg' alt="Representação esquemática do framework Crisp-DM" width=600/>
 
 Portanto, este workshop nos proporcionou experiências de entendimento de negócios, engenharia de dados e ciência de dados para a execução de um projeto com dados reais do início ao fim.
 
@@ -20,7 +33,7 @@ O canal da Twitch Teo Me Why possui um [sistema de pontos](https://teomewhy.org/
 Há 3 tipos de pontos: Datapoints, Pôneis e Cubos.
 É possível termos pontos negativos, já que as transações em que os pontos são trocados por prêmios também são registradas.
 
-O churn é caracterizado pela inatividade na conta dentro de um período de 28 dias.
+O churn é caracterizado pela inatividade na conta dentro de um período de 28 dias. Portanto, denominaremos contas que deram "churn" como inativas, e as que não deram "churn" como ativas.
 
 ## Entendimento dos dados
 
