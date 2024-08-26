@@ -81,11 +81,11 @@ Janela de observação: 28 dias
 Número de coortes (safras): 7
 
 Portanto, temos os seguinte elementos na nossa feature store:
-### Partição
+*Partição*
 * **dtRef**: data da observação (coorte), ou seja, último dia da janela de observação.
-### Id
+*Id*
 * **idCliente**: código único do cliente.
-### Features
+*Features*
 * **nrSomaPontos**: número total de pontos do idCliente na dtRef.
 * **nrSomaPontosPos**: número total de pontos positivos do idCliente na dtRef.
 * **nrSomaPontosNeg**: número total de pontos negativos do idCliente na dtRef.
