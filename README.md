@@ -107,7 +107,7 @@ Embora a análise exploratória de dados seja feita normalmente na etapa de ente
 
 <img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/contas_ativas_inativas.png' alt="Número de contas ativas e inativas entre fevereiro e agosto de 2024">
 <img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/contas_ativas_inativas_safra.png' alt="Contas ativas e inativas por safra">
-<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/media_transacao_dia.png' alt="Média de transações por dia por status da conta">
+<img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/media_transacoes_dia.png' alt="Média de transações por dia por status da conta">
 <img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/media_pontos_dia.png' alt="Número de contas por média de pontos por dia">
 <img src='https://raw.githubusercontent.com/Lud-lud/previsao_churn_twitch_teomewhy/main/assets/recencia.png' alt="Número de contas por recência de transação">
 
